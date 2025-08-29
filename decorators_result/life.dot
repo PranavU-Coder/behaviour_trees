@@ -1,0 +1,15 @@
+digraph pastafarianism {
+ordering=out;
+graph [fontname="times-roman"];
+node [fontname="times-roman"];
+edge [fontname="times-roman"];
+Life [label=Life, shape=box, style=filled, fillcolor=orange, fontsize=9, fontcolor=black];
+Inverter [label=Inverter, shape=ellipse, style=filled, fillcolor=ghostwhite, fontsize=9, fontcolor=black];
+Life -> Inverter;
+"Busy?" [label="Busy?", shape=ellipse, style=filled, fillcolor=gray, fontsize=9, fontcolor=black];
+Inverter -> "Busy?";
+Timeout [label=Timeout, shape=ellipse, style=filled, fillcolor=ghostwhite, fontsize=9, fontcolor=black];
+Life -> Timeout;
+"Have a Beer!" [label="Have a Beer!", shape=ellipse, style=filled, fillcolor=gray, fontsize=9, fontcolor=black];
+Timeout -> "Have a Beer!";
+}
